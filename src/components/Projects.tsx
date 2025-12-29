@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Container,
@@ -41,7 +40,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Box id="projects" sx={{ py: 15, bgcolor: "background.default" }}>
+    <Box id="projects" sx={{ py: 15 }}>
       <Container maxWidth="lg">
         <Typography
           variant="h2"
@@ -49,17 +48,18 @@ const Projects = () => {
           gutterBottom
           sx={{ mb: 8, fontWeight: "bold", textAlign: "center" }}
         >
-          Selected Projects
+          Featured Projects
         </Typography>
         <Grid container spacing={4}>
           {projects.map((project, index) => (
-            <Grid item xs={12} md={4} key={index}>
+            <Grid size={{ xs: 12, md: 4 }} key={index}>
               <Card
                 sx={{
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   bgcolor: "background.paper",
+                  borderRadius: 4,
                   border: "1px solid rgba(255,255,255,0.05)",
                   transition: "all 0.3s ease-in-out",
                   "&:hover": {

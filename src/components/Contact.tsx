@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Container,
@@ -10,22 +10,30 @@ import {
   Card,
 } from "@mui/material";
 
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 const Contact = () => {
-  const [formData, setFormData] = React.useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
   });
-  const [status, setStatus] = React.useState(""); // "submitting" | "success" | "error" | ""
+  const [status, setStatus] = useState(""); // "submitting" | "success" | "error" | ""
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
 
@@ -75,7 +83,7 @@ const Contact = () => {
           }}
         >
           <Grid container spacing={6}>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               <Typography variant="h4" gutterBottom sx={{ mb: 3 }}>
                 Let's Talk
               </Typography>
@@ -127,7 +135,7 @@ const Contact = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6}>
+            <Grid size={{ xs: 12, md: 6 }}>
               {status === "success" ? (
                 <Stack
                   spacing={2}

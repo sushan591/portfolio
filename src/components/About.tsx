@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Container,
@@ -7,7 +6,6 @@ import {
   Chip,
   Paper,
   Stack,
-  Avatar,
 } from "@mui/material";
 import CodeIcon from "@mui/icons-material/Code";
 import StorageIcon from "@mui/icons-material/Storage";
@@ -23,7 +21,7 @@ const skills = [
       "Redux",
       "Node.js (Express)",
       "JavaScript",
-      "TypeScript",
+      "TypeScript (Basic)",
       "jQuery",
     ],
   },
@@ -74,7 +72,7 @@ const About = () => {
         </Typography>
 
         <Grid container spacing={8} alignItems="center">
-          <Grid item xs={12} md={5}>
+          <Grid size={{ xs: 12, md: 5 }}>
             <Box
               sx={{
                 position: "relative",
@@ -129,13 +127,13 @@ const About = () => {
             </Box>
           </Grid>
 
-          <Grid item xs={12} md={7}>
+          <Grid size={{ xs: 12, md: 7 }}>
             <Typography variant="h4" gutterBottom sx={{ mb: 4 }}>
               Technical Skills
             </Typography>
             <Grid container spacing={3}>
               {skills.map((skill) => (
-                <Grid item xs={12} sm={6} key={skill.category}>
+                <Grid size={{ xs: 12, sm: 6 }} key={skill.category}>
                   <Paper
                     sx={{
                       p: 3,
