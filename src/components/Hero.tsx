@@ -57,16 +57,16 @@ const Hero = () => {
               Sushan Shrestha
             </span>{" "}
             <br />
-            Full Stack Developer
+            Full Stack Software Engineer
           </Typography>
           <Typography
             variant="h5"
             color="text.secondary"
             sx={{ maxWidth: "600px", lineHeight: 1.6 }}
           >
-            Building scalable, production-grade systems with React and Node.js.
-            Focused on clean code, performance optimization, and robust API
-            integration.
+            Nine years of shipping web products — from Laravel platforms to
+            React and Node.js microservices on AWS. Currently building at
+            Outcode, based in Lalitpur, Nepal.
           </Typography>
           <Stack direction="row" spacing={2}>
             <Button

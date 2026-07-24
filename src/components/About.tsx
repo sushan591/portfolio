@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Container,
   Typography,
@@ -7,6 +8,7 @@ import {
   Paper,
   Stack,
 } from "@mui/material";
+import profileImg from "../assets/sushan-img.jpg";
 import CodeIcon from "@mui/icons-material/Code";
 import StorageIcon from "@mui/icons-material/Storage";
 import CloudQueueIcon from "@mui/icons-material/CloudQueue";
@@ -21,8 +23,7 @@ const skills = [
       "Redux",
       "Node.js (Express)",
       "JavaScript",
-      "TypeScript (Basic)",
-      "jQuery",
+      "TypeScript",
     ],
   },
   {
@@ -100,28 +101,53 @@ const About = () => {
                   border: "1px solid rgba(255,255,255,0.05)",
                 }}
               >
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  sx={{ color: "primary.main", fontWeight: 700 }}
+                <Stack
+                  direction="row"
+                  spacing={2.5}
+                  alignItems="center"
+                  sx={{ mb: 3 }}
                 >
-                  Full Stack Developer
-                </Typography>
+                  <Avatar
+                    src={profileImg}
+                    alt="Sushan Shrestha"
+                    sx={{
+                      width: 96,
+                      height: 96,
+                      border: "3px solid",
+                      borderColor: "primary.main",
+                    }}
+                  />
+                  <Box>
+                    <Typography variant="h5" sx={{ fontWeight: 700 }}>
+                      Sushan Shrestha
+                    </Typography>
+                    <Typography
+                      variant="subtitle1"
+                      sx={{ color: "primary.main", fontWeight: 600 }}
+                    >
+                      Full Stack Software Engineer
+                    </Typography>
+                  </Box>
+                </Stack>
                 <Typography
                   variant="body1"
                   paragraph
                   sx={{ color: "text.secondary", lineHeight: 1.8 }}
                 >
-                  Full Stack Developer with 8+ years of experience in Node.js
-                  and React.js. Skilled in building scalable, production-grade
-                  systems, optimizing performance, and integrating robust APIs.
+                  I'm Sushan, a full stack developer from Lalitpur, Nepal,
+                  with 9+ years of experience. Since 2021 I've been at
+                  Outcode, building MERN-stack products — REST APIs in Node.js
+                  and Express, React frontends, and serverless microservices
+                  on AWS Lambda.
                 </Typography>
                 <Typography
                   variant="body1"
                   sx={{ color: "text.secondary", lineHeight: 1.8 }}
                 >
-                  Strong collaborator with global teams, focused on clean code,
-                  DevOps best practices, and continuous learning.
+                  Before that I built web platforms with Laravel and led
+                  client delivery cycles end to end. Along the way I picked up
+                  habits I've kept: Docker-first deployments, CI/CD for
+                  everything, and database schemas tuned before they hurt.
                 </Typography>
               </Paper>
             </Box>

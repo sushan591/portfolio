@@ -6,17 +6,16 @@ import {
   Card,
   CardContent,
   CardMedia,
-  CardActions,
-  Button,
   Chip,
 } from "@mui/material";
 import zipidImg from "../assets/zipid.png";
 import aegixImg from "../assets/aegix.png";
-import trackifyImg from "../assets/ecommerce.png"; // Reusing ecommerce as placeholder for Trackify
+import trackifyImg from "../assets/ecommerce.png"; // TODO: replace with a real Trackify screenshot
 
 const projects = [
   {
     title: "ZipId",
+    type: "Client Project",
     description:
       "A secure, user-friendly platform for Form I-9 verification. Streamlines employee validation with digital compliance tools.",
     tags: ["React", "Node.js", "MongoDB"],
@@ -24,6 +23,7 @@ const projects = [
   },
   {
     title: "Aegix",
+    type: "Client Project",
     description:
       "Disaster reporting system integrated with AWS Lambda. Features real-time alerts and interactive map-based reporting.",
     tags: ["React", "AWS Lambda", "Node.js"],
@@ -31,6 +31,7 @@ const projects = [
   },
   {
     title: "Trackify",
+    type: "Internal Tool",
     description:
       "Internal time-tracking system with robust backend and seamless frontend integration for workforce management.",
     tags: ["Express.js", "React", "PostgreSQL"],
@@ -86,6 +87,12 @@ const Projects = () => {
                 </Box>
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>
                   <Typography
+                    variant="overline"
+                    sx={{ color: "primary.main", letterSpacing: 1.5 }}
+                  >
+                    {project.type}
+                  </Typography>
+                  <Typography
                     variant="h5"
                     component="div"
                     gutterBottom
@@ -116,16 +123,6 @@ const Projects = () => {
                     ))}
                   </Box>
                 </CardContent>
-                <CardActions sx={{ p: 3, pt: 0 }}>
-                  <Button
-                    size="small"
-                    color="primary"
-                    variant="text"
-                    sx={{ ml: -1 }}
-                  >
-                    View Case Study
-                  </Button>
-                </CardActions>
               </Card>
             </Grid>
           ))}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sushan Shrestha — Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  @page {
+    size: A4;
+    margin: 9mm 14mm;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-size: 9.4pt;
+    color: #1a1a1a;
+    line-height: 1.35;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .name {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 23pt;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .name span { color: #00a152; }
+  .role {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 12.5pt;
+    font-weight: 600;
+    color: #444;
+    margin-top: 2pt;
+  }
+  .contact {
+    margin-top: 4pt;
+    font-size: 9.2pt;
+    color: #555;
+  }
+  .contact span + span::before {
+    content: "  ·  ";
+    color: #bbb;
+  }
+
+  section { margin-top: 8pt; }
+  h2 {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #00a152;
+    border-bottom: 1.2pt solid #e3e3e3;
+    padding-bottom: 2pt;
+    margin-bottom: 5pt;
+  }
+
+  .summary { color: #333; }
+
+  .skill-row { display: flex; margin-bottom: 3.5pt; }
+  .skill-cat {
+    flex: 0 0 118pt;
+    padding-right: 10pt;
+    font-weight: 600;
+    color: #333;
+  }
+  .skill-items { flex: 1; color: #444; }
+
+  .job { margin-bottom: 7pt; break-inside: avoid; }
+  .job:last-child, .project:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .job-title {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-size: 11pt;
+    font-weight: 700;
+  }
+  .job-company { color: #00a152; }
+  .job-meta {
+    font-size: 9.2pt;
+    color: #666;
+    white-space: nowrap;
+  }
+  ul { margin: 3pt 0 0 12pt; }
+  li { margin-bottom: 1pt; color: #333; }
+
+  .project { margin-bottom: 5pt; break-inside: avoid; }
+  .project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .project-name {
+    font-family: "Outfit", Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 10.5pt;
+  }
+  .project-type {
+    font-size: 8.5pt;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .project-desc { color: #333; margin-top: 1pt; }
+  .project-stack { font-size: 9pt; color: #00a152; font-weight: 500; margin-top: 1pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="name">Sushan <span>Shrestha</span></div>
+  <div class="role">Full Stack Software Engineer · MERN Stack | Node.js Focused</div>
+  <div class="contact">
+    <span>Lalitpur, Nepal</span>
+    <span><a href="mailto:sushan.shr10@gmail.com">sushan.shr10@gmail.com</a></span>
+    <span><a href="https://github.com/sushan591">github.com/sushan591</a></span>
+    <span><a href="https://www.linkedin.com/in/sushan-shrestha/">linkedin.com/in/sushan-shrestha</a></span>
+  </div>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <p class="summary">
+    Full stack software engineer with 9+ years of experience — 6+ of them building scalable,
+    production-grade MERN applications with a strong emphasis on Node.js backend development.
+    Experienced in designing RESTful APIs, authentication and authorization flows, and
+    third-party integrations (payments, communication APIs, external data providers), with
+    cloud deployments on AWS and Azure. Comfortable owning features end-to-end within
+    cross-functional teams.
+  </p>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skill-row">
+    <div class="skill-cat">Backend</div>
+    <div class="skill-items">Node.js, Express.js, REST APIs, Authentication &amp; Authorization, API Integrations, Microservices, Socket.io, Kafka</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-cat">Frontend</div>
+    <div class="skill-items">React.js (Hooks, Context), Redux, TypeScript, JavaScript (ES6+), HTML, CSS, Responsive Design</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-cat">Databases</div>
+    <div class="skill-items">MongoDB, PostgreSQL, MySQL, MS SQL Server</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-cat">Cloud &amp; DevOps</div>
+    <div class="skill-items">AWS (Lambda, EC2, S3, CDK, ECS, Route53, EventBridge), Azure, Docker, CI/CD, Nginx</div>
+  </div>
+  <div class="skill-row">
+    <div class="skill-cat">Tools &amp; Practices</div>
+    <div class="skill-items">Git, Code Reviews, Cypress, Debugging, Performance Optimization</div>
+  </div>
+</section>
+
+<section>
+  <h2>Work Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Full Stack Developer · <span class="job-company">Outcode LLC</span></div>
+      <div class="job-meta">Sept 2021 – Present · Kathmandu</div>
+    </div>
+    <ul>
+      <li>Designed and built scalable RESTful APIs with Node.js and Express for production MERN systems.</li>
+      <li>Implemented secure authentication and authorization with token-based access and role-based permissions.</li>
+      <li>Integrated third-party payments, communication APIs, and external data providers, including serverless integrations on AWS Lambda.</li>
+      <li>Owned backend development for systems involving user management, scheduling, and complex business logic.</li>
+      <li>Optimized MongoDB and PostgreSQL schemas and queries, reducing API response times and improving data consistency.</li>
+            <li>Implemented CI/CD pipelines and Dockerized services; deployed and monitored applications on AWS and Azure.</li>
+      <li>Led integration of new React frontend modules and conducted code reviews in Git-based workflows.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Web Developer · <span class="job-company">Diagonal Technologies Pvt. Ltd</span></div>
+      <div class="job-meta">Mar 2021 – Sept 2021 · Kathmandu</div>
+    </div>
+    <ul>
+      <li>Built modular microservices and REST APIs with Node.js and Express.</li>
+      <li>Integrated APIs with responsive frontend apps using React.js.</li>
+      <li>Containerized services with Docker to keep environments consistent.</li>
+          </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Web Developer · <span class="job-company">H. T. Solution Pvt. Ltd</span></div>
+      <div class="job-meta">Feb 2017 – Feb 2021 · Kathmandu</div>
+    </div>
+    <ul>
+      <li>Led full-stack development for web platforms using PHP (Laravel) and JavaScript.</li>
+      <li>Managed client communications and delivery cycles with Agile practices.</li>
+          </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Selected Projects</h2>
+
+  <div class="project">
+    <div class="project-head">
+      <div class="project-name">ZipId</div>
+      <div class="project-type">Client Project</div>
+    </div>
+    <div class="project-desc">Form I-9 verification platform streamlining employee validation with digital compliance tools.</div>
+    <div class="project-stack">React · Node.js · MongoDB</div>
+  </div>
+
+  <div class="project">
+    <div class="project-head">
+      <div class="project-name">Aegix</div>
+      <div class="project-type">Client Project</div>
+    </div>
+    <div class="project-desc">Disaster reporting system on AWS Lambda with real-time alerts and map-based reporting.</div>
+    <div class="project-stack">React · AWS Lambda · Node.js</div>
+  </div>
+
+  <div class="project">
+    <div class="project-head">
+      <div class="project-name">Trackify</div>
+      <div class="project-type">Internal Tool</div>
+    </div>
+    <div class="project-desc">Internal time-tracking system for workforce management with a robust Express backend.</div>
+    <div class="project-stack">Express.js · React · PostgreSQL</div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="job-head">
+    <div class="job-title">Bachelor of Information Management (BIM)</div>
+  </div>
+</section>
+
+</body>
+</html>

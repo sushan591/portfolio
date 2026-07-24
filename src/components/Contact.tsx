@@ -105,21 +105,7 @@ const Contact = () => {
                   Contact Details
                 </Typography>
                 <Typography variant="body1" sx={{ color: "white", mb: 1 }}>
-                  Thaiba, Lalitpur
-                </Typography>
-                <Typography
-                  variant="h6"
-                  component="a"
-                  href="tel:+9779849787330"
-                  sx={{
-                    color: "white",
-                    textDecoration: "none",
-                    display: "block",
-                    mb: 1,
-                    "&:hover": { color: "primary.main" },
-                  }}
-                >
-                  +977-9849787330
+                  Lalitpur, Nepal
                 </Typography>
                 <Typography
                   variant="h6"
