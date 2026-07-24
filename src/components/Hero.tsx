@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import heroBg from "../assets/hero_bg.png";
+import heroBg from "../assets/hero_bg.webp";
 
 const float = keyframes`
   0% { transform: translateY(0px); }

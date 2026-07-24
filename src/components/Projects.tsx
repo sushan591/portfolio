@@ -8,9 +8,9 @@ import {
   CardMedia,
   Chip,
 } from "@mui/material";
-import zipidImg from "../assets/zipid.png";
-import aegixImg from "../assets/aegix.png";
-import trackifyImg from "../assets/ecommerce.png"; // TODO: replace with a real Trackify screenshot
+import zipidImg from "../assets/zipid.webp";
+import aegixImg from "../assets/aegix.webp";
+import trackifyImg from "../assets/ecommerce.webp"; // TODO: replace with a real Trackify screenshot
 
 const projects = [
   {
